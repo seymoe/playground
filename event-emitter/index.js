@@ -44,11 +44,11 @@ const helloHandler = function (params) {
   console.log("hello event success be emit!", params);
 };
 
-event.on("test", testHandler);
+event.on("", testHandler);
 event.on("test", helloHandler);
 
-event.emit("test", "haha!");
+event.emit("", "haha!");
 
-event.off("test", helloHandler);
+// event.off("test", helloHandler);
 
 console.log(event.eventMap);
